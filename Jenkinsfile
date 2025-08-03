@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/Rishikesh-devops/flask-ec2-app.git'
+                git branch: 'main', url: 'https://github.com/Rishikesh-devops/flask-ec2-app.git'
             }
         }
 
@@ -30,4 +30,3 @@ pipeline {
         }
     }
 }
-
